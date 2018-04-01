@@ -1,0 +1,35 @@
+<div class="box" id={{cid}} (click)="moveConnectors()">
+  <div class="boxheader" (mouseenter)="bringToFront()" (mouseleave)="sendToBack()" id={{headId}}>
+    {{title}}
+
+    <span class="move">
+      <span class="tooltipText">Move | Connect</span>
+      <fa name="arrows" class="mouseOver" draggable="true" (dragstart)="setData($event)" (dragend)="moveElement($event)"
+          (drop)="connect($event)" (dragover)="allowDrop($event)"></fa>
+      <fa name="chain-broken" class="line-link" draggable="true" (dragstart)="setData($event)" (drop)="connect($event)"
+          (dragover)="allowDrop($event)"></fa>
+    </span>
+
+    <span class="settings">
+      <span (click)="showControls()" id={{showcntrl}}>
+        <span class="tooltipText">Settings</span>
+        <fa name="cog" animation="spin"></fa>
+      </span>
+    <span class="controls" id={{cntrl}}>
+
+      <fa name="pencil" (click)="edit()"></fa>
+      <fa name="hand-o-up" (click)="sendToBack()"></fa>
+      <fa name="hand-o-down" (click)="bringToFront()"></fa>
+      <fa name="trash" (click)="delete()"></fa>
+      <fa name="eye-slash" (click)="hideControls()"></fa>
+      <span class="tooltipText">Edit | Send Back | Bring Forward | Delete | Hide</span>
+    </span>
+  </span>
+
+  </div>
+
+  <div class="boxbody" (mouseenter)="bringToFront()" (mouseleave)="sendToBack()" id={{bodyId}}>
+    {{body}}
+  </div>
+
+</div>

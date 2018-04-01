@@ -1,0 +1,122 @@
+.cardBack {
+  background-color: rgb(132, 147, 219);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: rgba(115, 170, 193, 0.72);
+  color: #ececec;
+  text-align: center;
+  min-width: 1000px;
+  min-height: 350px;
+  overflow: auto;
+}
+
+.toolBox-container {
+  width: 10%;
+  margin-left: 10px;
+  min-width: 75px;
+}
+
+.icon-bar {
+  margin-left: 25px;
+  width: 60%;
+  background-color: #555;
+  border: 2px solid black;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+  border: 1px solid #010840;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -2px 0 rgba(0, 0, 0, .25), inset 0 -3px 0 rgba(255, 255, 255, .2), 0 1px 0 rgba(0, 0, 0, .1);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -2px 0 rgba(0, 0, 0, .25), inset 0 -3px 0 rgba(255, 255, 255, .2), 0 1px 0 rgba(0, 0, 0, .1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -2px 0 rgba(0, 0, 0, .25), inset 0 -3px 0 rgba(255, 255, 255, .2), 0 1px 0 rgba(0, 0, 0, .1);
+
+}
+
+.icon-bar a:hover {
+  background-color: #010840;
+  border: 1px black;
+}
+
+.primary {
+  margin: auto;
+  height: 72px;
+}
+
+.mouseOver {
+  cursor: copy;
+}
+
+.box {
+  text-align: center;
+  background: #cbc801;
+  margin: auto;
+  box-shadow: 1px 1px 2px #535353;
+  border: 4px #8ec0a1;
+  border-radius: 4px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /*width: 50px;
+  height: 50px;
+  overflow: hidden;
+  !* limit size with min/max-width/height*!
+  min-height: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  max-height: 50px;*/
+}
+
+.boxheader {
+  background: #1d1d1d;
+  color: #85b909;
+  font-weight: bold;
+  font-size: xx-small;
+}
+
+.boxbody {
+  color: #010840;
+  font-size: xx-small;
+  padding: 10px;
+}
+
+.circle {
+  border-radius: 100%;
+}
+
+.workspace {
+  background-color: #e4ffea;
+  position: relative;
+  overflow: auto;
+  height: 100%;
+  width: 85%;
+  min-height: 300px;
+}
+
+.bin {
+@extend % content;
+  left: 0;
+  height: 4000px;
+  width: 10000px;
+  border: 1px solid #0000c1;
+  position: absolute;
+  background-color: #e4ffea;
+
+  background-image: linear-gradient(rgba(0, 0, 193, 0.34) 1px,
+  transparent 2px), linear-gradient(90deg, rgba(0, 0, 193, 0.34) 2px, transparent 1px),
+  linear-gradient(rgba(1, 8, 64, 0.3) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(1, 8, 64, 0.3) 1px, transparent 1px);
+  background-size: 90px 90px, 90px 90px, 15px 15px, 15px 15px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+
+}
+
+

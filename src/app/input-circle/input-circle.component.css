@@ -1,0 +1,108 @@
+.mouseOver {
+  cursor: move;
+}
+
+.move {
+  float: left;
+}
+
+.line-link {
+  cursor: grab;
+}
+
+.circle {
+  background: #b4ffe5;
+
+  box-shadow: 5px 5px 10px #535353;
+  border: 1px #8ec0a1;
+  border-radius: 100%;
+  position: relative;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  /* limit size with min/max-width/height*/
+  min-height: 50px;
+  min-width: 100px;
+  max-width: 500px;
+  max-height: 400px;
+  resize: both;
+  z-index: 1000;
+
+}
+
+.circleHeader {
+  background: #535353;
+  color: #619bb9;
+  padding: 5px;
+  font-weight: bold;
+  min-height: 32px;
+}
+
+.circleBody {
+  color: #010840;
+  font-size: medium;
+  padding: 20px;
+}
+
+/*
+.circle:hover{
+  z-index: 10;
+}
+
+
+*/
+span.settings{
+  float: right;
+  cursor: pointer;
+}
+span.resize{
+  cursor: pointer;
+}
+
+.settings .tooltipText {
+  right:10px;
+  top:30px;
+
+  visibility: hidden;
+  width: 90px;
+  background-color: #3d443b;
+  color: #fefefe;
+  text-align: center;
+  border-radius: 0;
+  padding: 5px 0;
+  font-size: xx-small;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 2000;
+}
+.settings:hover .tooltipText {
+  visibility: visible;
+}
+
+.controls{
+  display: none;
+  float: left;
+}
+.move .tooltipText {
+  left:0;
+  top:30px;
+
+  visibility: hidden;
+  width: 50px;
+  background-color: #3d443b;
+  color: #fefefe;
+  text-align: center;
+  border-radius: 0;
+  padding: 5px 0;
+  font-size: xx-small;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 2000;
+}
+.move:hover .tooltipText {
+  visibility: visible;
+}
+
+.circle-control{
+  z-index: 1000;
+}

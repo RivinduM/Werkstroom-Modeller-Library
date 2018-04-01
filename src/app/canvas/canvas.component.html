@@ -1,0 +1,33 @@
+<div class="card cardBack" id='palette'>
+
+  <div class="row col-md-12 col-sm-12">
+
+    <div class="toolBox-container">
+
+      <div class="icon-bar" id="icon-bar">
+        <div>Toolbox</div>
+
+        <a class="primary mouseOver">
+          <div class="box" draggable="true" (dragstart)="drag($event)" id="boxModal">
+            <div class="boxheader" id="toolboxBoxHeader">Header</div>
+            <div class="boxbody" id="toolboxBoxBody">Body</div>
+          </div>
+        </a>
+
+        <a class="primary mouseOver">
+          <div class="circle box" draggable="true" (dragstart)="drag($event)" id="circleModal">
+            <div class="boxheader" id="toolboxCircleHeader">Header</div>
+            <div class="boxbody" id="toolboxCircleBody">Body</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+    <div id="workspace" class="workspace" (mousemove)="updateList()">
+      <div class="bin" (drop)="drop($event)" (dragover)="allowDrop($event)" id="canvas" >
+      </div>
+    </div>
+
+  </div>
+
+</div>

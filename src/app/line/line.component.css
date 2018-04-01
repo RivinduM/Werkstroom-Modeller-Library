@@ -1,0 +1,14 @@
+.line{
+  height: 4px;
+  rotation-point: center;
+  border: solid thin #1c0b6e;
+  position: absolute;
+  background-color: #1c0b6e;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.line:hover{
+  background-color: teal;
+  cursor: pointer;
+}
