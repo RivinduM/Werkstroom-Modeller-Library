@@ -4,28 +4,18 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { CanvasComponent } from './canvas/canvas.component';
-import { InputBoxComponent } from './input-box/input-box.component';
-import { InputCircleComponent } from './input-circle/input-circle.component';
-import { LineComponent } from './line/line.component';
-import {Globals} from './globals';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
-
+import {CanvasModule} from './canvas/canvas.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CanvasComponent,
-    InputBoxComponent,
-    InputCircleComponent,
-    LineComponent
+    CanvasComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    AngularFontAwesomeModule
+    CanvasModule
   ],
-  providers: [Globals],
-  entryComponents: [InputBoxComponent, InputCircleComponent, LineComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

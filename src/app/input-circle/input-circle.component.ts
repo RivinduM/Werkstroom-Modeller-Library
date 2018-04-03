@@ -44,7 +44,7 @@ export class InputCircleComponent implements OnInit, AfterViewInit {
     document.getElementById(this.headId).style.background = this.componentHead;
     document.getElementById(this.headId).style.color = this.componentHeadTxt;
     document.getElementById(this.bodyId).style.color = this.componentBodyTxt;
-    document.getElementById(this.cid).style.textShadow = '1px 1px 10px ' + this.componentHead;
+    document.getElementById(this.cid).style.textShadow = '0 0 5px ' + this.componentHead;
   }
 
   /**
@@ -361,7 +361,7 @@ export class InputCircleComponent implements OnInit, AfterViewInit {
 
   /**
    * @desc get amount of scroll of the workspace and returns scroll amount [x,y]
-   * @returns {number[]}
+   * @returns [x position, y position]
    */
   getScroll() {
     const elmnt = document.getElementById('workspace');

@@ -29,7 +29,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .box {
-  background: #b4ffe5;
+  background: #cbc801;
   margin: 40px;
   box-shadow: 5px 5px 10px #535353;
   border: 1px #8ec0a1;
@@ -48,8 +48,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .boxheader {
-  background: #535353;
-  color: #619bb9;
+  background: #1d1d1d;
+  color: #85b909;
   padding: 5px;
   font-weight: bold;
   min-height: 32px;

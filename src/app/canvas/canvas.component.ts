@@ -170,7 +170,7 @@ export class CanvasComponent implements OnInit {
 
   /**
    * @desc get amount of scroll of the workspace and returns scroll amount [x,y]
-   * @returns {number[]}
+   * @returns [x position, y position]
    */
   getScroll() {
     const elmnt = document.getElementById('workspace');

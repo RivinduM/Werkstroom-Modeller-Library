@@ -8,11 +8,13 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "packagr": "ng-packagr -p ng-package.json"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
-    "@angular/animations": "^5.2.0",
+  },
+  "peerDependencies": {
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
     "@angular/core": "^5.2.0",
@@ -26,7 +28,9 @@
     "bootstrap": "^4.0.0",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
+    "ng-packagr": "^2.4.1",
     "rxjs": "^5.5.6",
+    "save-dev": "^2.0.0",
     "sweetalert2": "^7.18.0",
     "zone.js": "^0.8.19"
   },
