@@ -1,7 +1,7 @@
 {
   "name": "werkstroom-modeller-library",
   "description": "Design workflow models easily in your project by dragging and dropping of components.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "workflow",
     "modeller",
