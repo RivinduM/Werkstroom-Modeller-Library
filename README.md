@@ -1,55 +1,59 @@
-# WerkstroomModellerLibrary
+# Werkstroom Modeller Library
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+  Design workflow models easily in your project by dragging and dropping of components.
 
 ## Prerequisities
 
-bootstrap 4.0.0 ==> npm install bootstrap@4.0.0
-popper.js ==> npm install popper.js@1.12.9
-jquery ==> npm install jquery@1.9.1
-ng-bootstrap ==> npm install --save @ng-bootstrap/ng-bootstrap
+
+popper.js `npm install popper.js@1.12.9`
+
+jquery `npm install jquery@1.9.1`
+
+ng-bootstrap `npm install --save @ng-bootstrap/ng-bootstrap`
 
 ## Installation
 
-Run npm install workflow-modeller
+Using npm
+
+`npm install werkstroom-modeller-library`
 
 ## Usage
 
-add "../node_modules/bootstrap/dist/css/bootstrap.min.css" & "../node_modules/font-awesome/css/font-awesome.css" to styles in .angular-cli.json
+##### Add Styles
 
-import CanvasComponent and CanvasModule from the library
+Add `"../node_modules/bootstrap/dist/css/bootstrap.min.css"` 
+ and `"../node_modules/font-awesome/css/font-awesome.css"` under styles in `.angular-cli.json`.
 
-import { CanvasComponent} from 'werkstroom-modeller-library';
-import {CanvasModule} from 'werkstroom-modeller-library';
+##### Import `CanvasComponent` and `CanvasModule` from the library
 
-In @ngModule declare CanvasComponent and import Canvas Module
+`import { CanvasComponent} from 'werkstroom-modeller-library'`
 
-Call <app-canvas><app-canvas/> to insert the workflow modeller
+`import {CanvasModule} from 'werkstroom-modeller-library';`
+
+In `@ngModule` declare `CanvasComponent` and import `CanvasModule`.
+
+Call `<app-canvas><app-canvas/>` to insert the workflow modeller to your html file.
 
 ## Custom styling
 
-paletteColor - to change backgroung color of the drawing area
+backColor - background colour of the working area \
+toolboxColor - toolbox background color\
+toolboxFontColor - toolbox heading color\
+paletteHeight - height of the working area (minimum 300px)\
+paletteWidth - width of the palette (minimum 1000px)\
+canvasColor - background color of the canvas area\
+componentColor - component fill color\
+componentHeaderColor - component header bar color\
+componentHeadTxt - font color of component header\
+componentBodyTxt - font color of component body\
+lineColor - connecting line color
+  
+`<app-canvas backColor="red" toolboxColor="#85b909" paletteHeight="500px">`
+`<app-canvas/>`
 
-## Development server
+###### Note
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Colors can be called by Color name or by their HEX notation./
+Add `px` for heights and widths.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
